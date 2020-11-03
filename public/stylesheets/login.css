@@ -1,0 +1,153 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2e2e;    
+    margin: 0px;
+}
+
+.component {
+    width: 100%;
+    height: 51vh;
+    top: 25.2vh;
+    position: absolute;
+    text-align: center;
+}
+
+.contents-box {
+    width: 350px;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+/* img {
+    width: 120px;
+    height: 50px;
+} */
+
+.center {
+    width: 350px;
+    height: 265px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.bootom {
+    margin-top: 44px;
+    font-size: 16px;
+    color: #bebebe;
+}
+
+#div_title {
+    position: relative;
+    height: 30px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+}
+
+.input_n {
+    font-size: 1em;
+    color: #0049C7;
+    width: 94.3%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#submit-btn {
+    width: 93%;
+    height: 48px;
+    margin-top: 35px;
+    font-size: 17px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+@media (max-height: 600px) {
+    /* .component {
+        width: 100%;
+        height: 66vh;
+        background-color: aliceblue;
+        top: 17vh;
+        position: absolute;
+        text-align: center;
+    }
+
+    .contents-box {
+        height: 50vh;
+        width: 50vh;
+        background-color: blueviolet;
+    } */
+}
+
+.loginFailPop {
+    width: 300px;
+    height: 165px;
+    background-color: #cccccc;
+    position: absolute;
+    z-index: 9999;
+    left: 7%;
+    top: 35%;
+    border: 1px solid #818286;
+    border-radius: 8px;
+    display: none;
+}
+.hearder_box {
+    width: 100%;
+    height: 20%;
+    background-color: #2B2E3C;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 10px;
+}
+.body_box {
+    width: 100%;
+    height: 80%;
+}
+.body_top {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    color: #3c3c3c;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.body_bottom {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.body_bottom > button {
+    width: 93px;
+    height: 34px;
+    border-radius: 4px;
+    /* background-color: #7f8280; */
+    font-size: 17px;
+}
+.body_bottom > button:hover {
+    cursor: pointer;
+}
+.login-overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: #b9b9b9;
+    position: relative;
+    opacity: 0.6;
+    display: none;
+}

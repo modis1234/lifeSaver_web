@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+#chartdiv {
+	width: 1377px;
+	height: 600px;
+}
+#chartdiv_column {
+	width: 1377px;
+	height: 200px;
+}
+
+#chart-o2 {
+	width: 1377px;
+	height: 30%;
+}
+a {display: none !important;}
+
+/* .amcharts-center-div {
+  padding-left: 72px !important;
+}
+.amcharts-stock-div {
+  width: 1500px;
+} */

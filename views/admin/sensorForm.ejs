@@ -1,0 +1,57 @@
+<div class="w2ui-page page-0 w2ui-sensor-form">
+    <div class="w2ui-field">
+        <label>설치위치</label>
+        <div><input name="location" ></div>
+    </div>
+    <div class="w2ui-field">
+        <label>가스인덱스</label>
+        <div> <input name="sensor_index" readonly></div>
+    </div>
+    <div class="w2ui-field">
+        <label>현재 상태</label>
+        <div><input name="action_text" readonly></div>
+    </div>
+
+    <div class="w2ui-field">
+        <label>PC알리음</label>
+        <div>                   
+            <input type="text" name="alarm_path" id="alarm_path" class="file_input_textbox" readonly >
+
+            <form id="form"> 
+                <div class="file_input_div">
+                    <img src="/images/search.png" class="file_input_img_btn" alt="open" />
+                    <!-- <input type="file" name="imgFile" class="file_input_hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/> -->
+                    <input type="file" name="imgFile" class="file_input_hidden"/>
+
+                </div>     
+            </form>
+            <button class="w2ui-btn" id="play-btn"><i class="fas fa-volume-up"></i></button>
+            <button class="w2ui-btn w2ui-btn-green" id="pause-btn" style="display: none;"><i class="fas fa-volume-up"></i></button>
+        
+        </div>
+    </div>
+    <div class="w2ui-field">
+        <label>워밍업시간</label>
+        <div id="input_warmingup_div">
+            <input type="text" class="warmingup-range-slider" name="warmingup_count" value="" />
+        </div>
+    </div>
+    <div class="w2ui-field">
+        <label>롤링시간</label>
+        <div id="input_rolling_div">
+            <input type="text" class="rolling-range-slider" name="rolling_count" value="" />
+
+        </div>
+    </div>
+  
+    <!-- <div class="w2ui-field">
+        <label>최근 검지 기록</label>
+        <div><input type="text" name="start_time" readonly></div>
+    </div> -->
+</div>
+<div class="w2ui-buttons">
+    <button class="w2ui-btn" name="reset" id="reset-btn">초기화</button>
+    <button class="w2ui-btn w2ui-btn-green" name="update" id="update-btn">수정</button>
+    <button class="w2ui-btn w2ui-btn-blue" name="save" id="search-btn">저장</button>
+
+</div>

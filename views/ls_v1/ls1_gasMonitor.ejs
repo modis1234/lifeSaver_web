@@ -1,0 +1,100 @@
+<div class="Left">
+	<div class="topBox">
+		<div class="toplogo"></div>
+		<div class="tit success">
+			<span class="tit-span"></span><br/>
+			<span>가스모니터링 시스템</span>
+		</div>
+		<div class="topbtn">
+			<div class="logout">
+				<i class="fas fa-sign-out-alt" id="logout-btn"></i><span>로그아웃</span>
+			</div>
+			<div class="adm">
+				<i class="fas fa-cog"></i><span>관리자</span>
+			</div>
+			<div class="sensor-list">
+				<i class="fas fa-list-alt"></i><span>등록센서</span>
+			</div>
+			<div class="volume-up">
+				<i class="fas fa-volume-up"></i><span>알람 켜짐</span>
+			</div>
+			<div class="volume-mute">
+				<i class="fas fa-volume-mute" ></i><span>알람 꺼짐</span>
+			</div>
+		</div>
+		<div class="count">
+			<div class="line"></div>
+			<div class="time">
+				<span><i class="fas fa-clock"></i></span>
+				<span id="usedTime-text">00:00:00</span>
+			</div>
+			<span class="ready">시스템 준비중입니다.</span>
+			<span class="action">공기질 측정중입니다.</span>
+				  
+		</div>
+	</div>
+	<div class="stateBox">
+		<div class="lte area success">
+			<i class="fas fa-signal"></i><span>LTE</span>
+		</div>
+		<div class="battery area success">
+			<i class="fas fa-car-battery"></i><span>BATTERY</span>
+		</div>
+		<div class="data area success">
+			<i class="fas fa-download"></i><span>DATA</span>
+		</div>
+		<div class="server area success">
+			<i class="fas fa-server"></i><span>SERVER</span>
+		</div>
+	</div>
+	<div class="severityBox success">
+		
+	</div>
+</div>
+<div class="right">
+	<div class="Gauge">
+		<div class="voc sensor"></div>
+		<div class="comb sensor"></div>
+		<div class="o2 sensor"></div>
+		<div class="h2s sensor"></div>
+		<div class="co sensor"></div>
+	</div>
+	<div class="Chart">
+		<div class="btn">
+			<ul>
+				<li class="chart-list voc-chart select" value="voc">휘발성<br>유기화합물<span>VOC</span></li>
+				<li class="chart-list comb-chart" value="comb">가연성가스<span>COMB</span></li>
+				<li class="chart-list o2-chart" value="o2">산소<span>O2</span></li>
+				<li class="chart-list h2s-chart" value="h2s">황화수소<span>H2S</span></li>
+				<li class="chart-list co-chart" value="co">일산화탄소<span>CO</span></li>
+			</ul>
+		</div>
+		<div class="chartBox">
+			<ul>
+				<li class="chart-contents-box" id="voc-chartBox">
+					<div class="chartDiv" id="voc-chartDiv"></div>
+				</li>
+				<li class="chart-contents-box" id="comb-chartBox" style="display: none;">
+					<div class="chartDiv" id="comb-chartDiv"></div>
+				</li>
+				<li class="chart-contents-box" id="o2-chartBox" style="display: none;">
+					<div class="chartDiv" id="o2-chartDiv"></div>
+				</li>
+				<li class="chart-contents-box" id="h2s-chartBox" style="display: none;">
+					<div class="chartDiv" id="h2s-chartDiv"></div>
+				</li>
+				<li class="chart-contents-box" id="co-chartBox" style="display: none;">
+					<div class="chartDiv" id="co-chartDiv"></div>
+				</li>
+			</ul>
+			<div class="rollingAt-box">
+				<span id="rolling-start-btn"><i class="fas fa-play"></i></span>
+				<span id="rolling-stop-btn"><i class="fas fa-pause"></i></span>
+	
+			</div>
+		</div>
+	</div>
+	<div class="Bottom">
+		<img src="../../img/ow_logo.png" alt="오픈웍스 로고">
+	</div>
+</div>

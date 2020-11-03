@@ -1,0 +1,110 @@
+<div class="Left">
+	<div class="topBox">
+		<div class="toplogo"></div>
+		<div class="tit">
+			<span class="tit-span"></span><br/>
+			<span>가스모니터링</span>
+
+		</div>
+		<div class="topbtn">
+			<div class="expand">
+				<i class="fas fa-video"></i><span>전체화면</span>
+			</div>
+			<div class="logout">
+				<i class="fas fa-sign-out-alt" id="logout-btn"></i><span>로그아웃</span>
+			</div>
+			<div class="adm">
+				<i class="fas fa-cog"></i><span>관리자</span>
+			</div>
+			<div class="sensor-list">
+				<i class="fas fa-list-alt"></i><span>등록센서</span>
+			</div>
+			<div class="volume-up">
+				<i class="fas fa-volume-up"></i><span>알람 켜짐</span>
+			</div>
+			<div class="volume-mute">
+				<i class="fas fa-volume-mute" ></i><span>알람 꺼짐</span>
+			</div>
+		</div>
+	</div>
+	<div class="camBox">
+		<div class="view">
+			<!-- CCTV (464-261px) -->
+		</div>
+	</div>
+	<div class="severityBox"></div>
+
+	<div class="stateBox">
+		<div class="lte area">
+			<i class="fas fa-signal"></i><span>LTE</span>
+		</div>
+		<div class="battery area">
+			<i class="fas fa-car-battery"></i><span>BATTERY</span>
+		</div>
+		<div class="data area">
+			<i class="fas fa-download"></i><span>DATA</span>
+		</div>
+		<div class="server area">
+			<i class="fas fa-server"></i><span>SERVER</span>
+		</div>
+	</div>
+</div>
+<div class="count">
+	<!-- 
+			<span class="ready">시스템 준비중입니다.</span>
+
+	 -->
+	<!--
+			<span class="ready">시스템 점검 중입니다.</span>
+			<span class="time">00:09:53 </span>후 검지를 시작합니다.
+-->
+	<span class="ready"></span>
+	<span class="time" id="usedTime-text"></span>
+	<span class="description"></span>
+
+</div>
+<div class="Gauge">
+	<div class="voc sensor"></div>
+	<div class="ex sensor"></div>
+	<div class="o2 sensor"></div>
+	<div class="h2s sensor"></div>
+	<div class="co sensor"></div>
+</div>
+<div class="Chart">
+	<div class="btn">
+		<ul>
+			<li class="chart-list voc-chart select" value="voc">휘발성<br>유기화합물<span>VOC</span></li>
+			<li class="chart-list ex-chart" value="ex">가연성가스<span>Ex</span></li>
+			<li class="chart-list o2-chart" value="o2">산소<span>O2</span></li>
+			<li class="chart-list h2s-chart" value="h2s">황화수소<span>H2S</span></li>
+			<li class="chart-list co-chart" value="co">일산화탄소<span>CO</span></li>
+		</ul>
+	</div>
+	<div class="chartBox">
+		<ul>
+			<li class="chart-contents-box" id="voc-chartBox">
+				<div class="chartDiv" id="voc-chartDiv"></div>
+			</li>
+			<li class="chart-contents-box" id="ex-chartBox" style="display: none;">
+				<div class="chartDiv" id="ex-chartDiv"></div>
+			</li>
+			<li class="chart-contents-box" id="o2-chartBox" style="display: none;">
+				<div class="chartDiv" id="o2-chartDiv"></div>
+			</li>
+			<li class="chart-contents-box" id="h2s-chartBox" style="display: none;">
+				<div class="chartDiv" id="h2s-chartDiv"></div>
+			</li>
+			<li class="chart-contents-box" id="co-chartBox" style="display: none;">
+				<div class="chartDiv" id="co-chartDiv"></div>
+			</li>
+		</ul>
+		<div class="rollingAt-box">
+			<span id="rolling-start-btn"><i class="fas fa-play"></i></span>
+			<span id="rolling-stop-btn"><i class="fas fa-pause"></i></span>
+
+		</div>
+	</div>
+</div>
+<div class="Bottom">
+	<img src="/img/ow_logo.png" alt="오픈웍스 로고">
+</div>

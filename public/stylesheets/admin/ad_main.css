@@ -1,0 +1,409 @@
+div.contents_newTitle {
+    width: 96%;
+    height: 3%;
+    color: #2e2e2e;
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+}
+/* usedList */
+div#usedList_form {
+    width: 96%;
+    height: 35%;
+    margin-left: 4%;
+}
+div#usedList_grid {
+    width: 95%;
+    height: 92%;
+    margin-left: 15px;
+}
+
+/* alarmList */
+div#alarmList_form {
+    width: 96%;
+    height: 43%;
+    margin-left: 4%;
+}
+div#alarmList_grid {
+    width: 95%;
+    height: 92%;
+    margin-left: 15px;
+}
+
+/* receiver */
+.bottom-left-box.receiver-left-box {
+    width: 51%;
+}
+.bottom-right-box.receiver-right-box {
+    width: 47%;
+}
+div#receiver_form {
+    width: 96%;
+    height: 43%;
+    /* margin-left: 4%; */
+}
+div#receiver_grid {
+    width: 97%;    
+    height: 92%;
+    margin-left: 15px;
+}
+div#newReceiver_grid {
+    width: 96%;
+    height: 42%;
+    border-radius: 10px;
+}
+
+/* senserInfo */
+.bottom-left-box.sensorInfo-left-box {
+    width: 65%;
+}
+
+div#sensorInfo_form {
+    width: 64.6%;
+    height: 82%;
+    margin-left: 2%;
+}
+
+#sensorInfo_form .w2ui-field:nth-child(2) span {
+    margin-left: 154px;
+    color: #ff0000;
+    font-size: 12px;
+    display: none;
+}
+/* .w2ui-page.page-0.w2ui-sensor-form {
+    width: 500px;
+    left: 136px;
+} */
+div#sensorInfo_form .w2ui-field input.w2ui-input{
+    width: 350px;
+}
+div#sensorInfo_form .w2ui-field input#alarm_path {
+    width: 260px !important;   
+    float: left;
+    margin-right: 5px;
+}
+.w2ui-btn.minus-btn, .w2ui-btn.plus-btn {
+    min-width: 35px;
+}
+div#sensorInfo_form .w2ui-field input#warmingup_count,
+div#sensorInfo_form .w2ui-field input#rolling_count{
+    width: 85px !important;
+}
+div#sensorInfo_form .w2ui-field input{
+    color: #000000;
+}
+.w2ui-sensor-form.w2ui-page.page-0>div {
+    position: relative;
+    top: 4%;
+    left: 7%;
+    width: 80%;
+}
+div#sensorInfo_form form#form {
+    height: 24px;
+    float: left;
+}
+div#sensorInfo_form .file_input_div {
+    position: relative;
+    width: 88px;
+    height: 27px;
+    overflow: hidden;
+}
+
+div#sensorInfo_form img.file_input_img_btn {
+    margin-left: 4px;
+    position: absolute;
+    bottom: 9px;
+    height: 29px;
+    top: 0px;
+}
+div#sensorInfo_form .file_input_hidden {
+    font-size: 29px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: alpha(opacity=0);
+    cursor: pointer;
+}
+button#play-btn, button#pause-btn {
+    min-width: 35px;
+    position: absolute;
+    height: 26px;
+    top: 4px;
+    left: 359px;
+}
+div#sensorInfo_form .w2ui-field>label {
+    width: 122px;
+}
+div#sensorInfo_form .w2ui-field:nth-child(n+5)>label {
+    margin-top: 35px;
+}
+div#sensorInfo_form .w2ui-field:nth-child(n+5) {
+    margin-top: 25px !important;
+}
+div#sensorInfo_form .w2ui-field>div {
+    margin-left: 143px;
+    color: #000000;
+    position: relative;
+}
+span.irs-handle.single:hover {
+    cursor: pointer;
+}
+span.irs-bar.irs-bar--single:hover {
+    cursor: pointer;
+}
+div#sensorInfo_form .w2ui-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+input#action_text {
+    width: 77px !important;
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 18px;
+    padding-left: 4px !important;
+}
+input#action_text[value="off"] {
+    background-color: #ff0000;
+}
+
+input#action_text[value="on"] {
+    background-color: #2ce41c;
+}
+input#action_text[value="loading"] {
+    background-color: #565654;
+}
+
+
+/* gasInfo */
+.bottom-left-box.gasInfo-left-box {
+    width: 51%;
+}
+.bottom-right-box.gasInfo-right-box {
+    width: 47%;
+}
+div#gasInfo_form {
+    width: 96%;
+    height: 92%;
+    margin-left: 3%;
+}
+div#gasInfo_grid {
+    width: 99%; 
+    height: 92%;
+    margin-left: 15px;
+}
+
+
+/* gasInfoForm */
+.w2ui-gasInfo-form>div{
+    /* height: 43.5%; */
+    height: 56.5%;
+}
+.w2ui-gasInfo-form .w2ui-form-top-area {
+    height: 100%;
+    width: 98%;
+    margin-left: 8px !important;
+   
+}
+.w2ui-gasInfo-form .w2ui-form-top-area .w2ui-group{
+    height: 100%;
+    padding-top: 25px;
+}
+.w2ui-gasInfo-form .w2ui-form-top-area .w2ui-group .w2ui-field.w2ui-span4 {
+    width: 70%;
+    margin-left: 5px;
+}
+.w2ui-page.page-0.w2ui-gasInfo-form {
+    height: 96.5%;
+    top: 5px !important;
+}
+.w2ui-form-bottom .w2ui-group {
+    height: 215px;
+    padding-bottom: 25px;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+.w2ui-form-bottom {
+    width: 97%;
+    height: 25%;
+    position: absolute;
+    top: 64%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alarm-value-box {
+    position: absolute;
+    height: 50px;
+    top: 117px;
+}
+.default-form .alarm-value-box {
+    width: 34%;
+}
+.o2-form .alarm-value-box {
+    width: 37%;
+}
+.alarm_text_box {
+    width: 20%;
+    text-align: center;
+}
+.alarm_text_box span.title {
+    color: #2e2e2e;
+    font-size: 13px;
+}
+.alarm_text_box.alarm1_box {
+    float: left;
+}
+.default-form .alarm_text_box.alarm1_box {
+    margin-left: 0px;
+}
+.o2-form .alarm_text_box.alarm1_box {
+    margin-left: 8px;
+}
+.alarm_text_box.alarm2_box {
+    float: right;
+}
+input#value_1, input#value_2 {
+    width: 100%;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    color: #777;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.default-form .range-image {
+    width: 83%;
+    height: 63px;
+    background: url('../../img/group 1.png') no-repeat;  
+    z-index: 99;
+}
+.o2-form .range-image {
+    width: 83%;
+    height: 63px;
+    background: url('../../img/group 2.png') no-repeat;  
+    z-index: 99;
+}
+
+.range-text-box {
+    position: absolute;
+    width: 85%;
+    height: 18px;
+    top: 100px;
+}
+.range-text.range_minimum {
+    width: 7%;
+    float: left;
+    height: 100%;
+    color: #5e5e5e;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+.range-text.range_maximum {
+    width: 7%;
+    float: right;
+    height: 100%;
+    color: #5e5e5e;
+    opacity: 0.5;
+    text-align: end;
+}
+.w2ui-form-bottom .w2ui-group .label-box label{
+    color: #666;
+}
+
+.w2ui-form-bottom .w2ui-span4>.label-box,
+.w2ui-form-bottom .w2ui-span4>div {
+    margin-left: 12px !important;
+    color: #000;
+}
+.w2ui-form-bottom .w2ui-span4>div>input {
+    width: 94px !important;
+}
+.w2ui-gasInfo-form .w2ui-group-title {
+    margin-left: 15px;
+}
+
+/* account */
+.bottom-left-box.account-left-box {
+    width: 51%;
+}
+.bottom-right-box.account-right-box {
+    width: 47%;
+}
+div#account_grid {
+    width: 97%;
+    height: 92%;
+    margin-left: 15px;
+}
+div#account_form {
+    width: 96%;
+    height: 76%;
+
+    /* margin-left: 4%; */
+}
+/* div#newAccount_grid {
+    width: 96%;
+    height: 14%;
+    border-radius: 10px;
+} */
+/* accountForm */
+.w2ui-page.page-0.w2ui-account-form {
+    margin-top: 0px !important;
+}
+.w2ui-account-form .w2ui-field {
+    margin-top: 13px !important;
+}
+.w2ui-account-form>div{
+    width: 80%;
+    margin-left: 10%;
+}
+.w2ui-page.w2ui-account-form input[type='text'],
+.w2ui-page.w2ui-account-form input[type='password']{
+    width: 360px !important;
+}
+.w2ui-page.w2ui-account-form .w2ui-field span {
+    color: #ff0000;
+}
+.w2ui-account-button.w2ui-buttons .w2ui-btn {
+    float: left;
+}
+.w2ui-account-button.w2ui-buttons  {
+    display: flex;
+    justify-content: center;
+}
+/* .w2ui-account-form .w2ui-field:nth-child(4),
+.w2ui-account-form .w2ui-field:nth-child(5) {
+    display: none !important;
+} */
+
+/* CCTVINFO */
+.bottom-left-box.cctvInfo-left-box {
+    width: 65%;
+}
+
+div#cctvInfo_form {
+    width: 37.6%;
+    height: 50%;
+    margin-left: 2%;
+}
+.w2ui-cctvInfo-form.w2ui-page.page-0>div {
+    position: relative;
+    top: 4%;
+    left: 7%;
+    width: 80%;
+}
+/* CCTVFORM */
+.w2ui-buttons.w2ui-sensor-buttons {
+    display: flex;
+    justify-content: center;
+}
+.page-0.w2ui-sensor-form {
+    margin-top: 0px !important;
+}
+.w2ui-sensor-form .w2ui-field input {
+    width: 180px !important;
+}

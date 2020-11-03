@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+  <script src="//www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="//www.amcharts.com/lib/3/serial.js"></script>
+  <script src="//www.amcharts.com/lib/3/themes/light.js"></script>
+  <script src="//www.amcharts.com/lib/3/amstock.js"></script>
+  <!-- <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p> -->
+  <div id="chartdiv"></div>
+  <div id="chartdiv_2"></div>
+  <style>
+    a {display: none !important;}
+  </style>
+  <script type="text/javascript">
+    /**
+     * Generate random chart data
+     */
+    var chartData = [];
+
+
+    function generateChartData() {
+      var firstDate = new Date();
+      // firstDate.setDate(firstDate.getDate() - 13);
+      // firstDate.setHours(0, 0, 0, 0);
+
+      for (var i = 0; i < 1; i++) {
+        var newDate = new Date(firstDate);
+        newDate.setSeconds(newDate.getSeconds() + 2);
+       
+        var _getMonth = newDate.getMonth()+1;
+        var _getDate = newDate.getDate();
+        var _getHours = newDate.getHours();
+        var _getMinutes = newDate.getMinutes();
+        var _getSenconds = newDate.getSeconds();
+
+        var recordTime = (_getMonth >= 10 ? _getMonth : '0' + _getMonth)
+                        + '-' + (_getDate >= 10 ? _getDate : '0' + _getDate)
+                        + ' ' + (_getHours >= 10 ? _getHours : '0' + _getHours)
+                        + ':' + (_getMinutes >= 10 ? _getMinutes : '0' + _getMinutes)
+                        + ':' + (_getSenconds >= 10 ? _getSenconds : '0' + _getSenconds)
+
+
+        chartData.push({
+          "date": "",
+          "value": 22.9
+        });
+        firstDate = newDate;
+      }
+      console.log(chartData);
+      return chartData;
+    }
+
+    //generateChartData();
+
+    /**
+     * Create the chart
+     */
+    var chart = AmCharts.makeChart("chartdiv", {
+      "type": "serial",
+      "theme": "light",
+      "zoomOutButton": {
+        "backgroundColor": '#000000',
+        "backgroundAlpha": 0.15
+      },
+      "dataProvider": generateChartData(),
+      "categoryField": "date",
+      "categoryAxis": {
+        "parseDates": false,
+        "minPeriod": "ss",
+        "dashLength": 1,
+        "gridAlpha": 0.15,
+        "axisColor": "#DADADA",
+        "autoGridCount": false,
+        "gridPosition": "start",
+        "gridCount":13
+      },
+      "valueAxes": [{
+          "id": "g1",
+          "minimum": 0,
+          "maximum": 1000,
+      }],
+      "graphs": [{
+        "id": "g2",
+        "valueField": "value",
+        //"bullet": "round",
+        "bulletBorderColor": "#FFFFFF",
+        "bulletBorderThickness": 2,
+        "lineThickness": 1,
+        "lineColor": "#0D52D1",
+        "negativeLineColor": "#0352b5",
+        "hideBulletsCount": 50
+      }],
+      "chartCursor": {
+        "cursorPosition": "mouse"
+      },
+      "chartScrollbar": {
+        "graph": "g2",
+        "scrollbarHeight": 40,
+        "color": "#FFFFFF",
+        "autoGridCount": true,
+        "enabled":false
+      }
+    })
+
+
+
+
+    var chart1 = AmCharts.makeChart("chartdiv_2", {
+      "type": "serial",
+      "theme": "light",
+      // "marginRight": 70,
+      "dataProvider": [],
+      "gridAboveGraphs": true,
+      "startDuration": 1,
+      "graphs": [{
+        "id":"g2",
+        "balloonText": "[[category]]: <b>[[value]]</b>",
+        "fillColorsField": "color",
+        "fillAlphas": 1,
+        "lineAlpha": 0,
+        "type": "column",
+        "valueField": "value",
+        "lineColor": "#fdd400",
+      }],
+      "valueAxes": [{
+          "id": "g2",
+          "minimum": 0,
+          "maximum": 100
+      }],
+      "chartCursor": {
+        "categoryBalloonEnabled": false,
+        "cursorAlpha": 0,
+        "zoomable": false
+      },
+      "categoryField": "date",
+      "categoryAxis": {
+        "gridPosition": "start",
+        "gridAlpha": 0,
+        // "tickPosition": "end",
+        // "tickLength": 30,
+        // 추가
+        "autoGridCount": false,
+        "tickPosition": "start",
+        "tickLength": 20,
+        "axisColor": "#2e2e2e",
+        "axisThickness": 1,
+        "gridAlpha": 1,
+        "gridColor": "#E5E5E5",
+        "gridCount": 13,
+        "gridThickness": 1,
+        "parseDates": false,
+        "minPeriod": "ss"
+      },
+      "export": {
+        "enabled": true
+        // "divId": "exportdiv"
+      }
+
+    });
+
+    /**
+     * Set up interval to update the data periodically
+     */
+    setInterval(function () {
+
+      // if mouse is down, stop all updates
+      if (chart.mouseDown)
+        return;
+
+      // add new datapoint at the end
+      // var newDate = new Date(chartData[chartData.length - 1].date);
+      // newDate.setSeconds(newDate.getSeconds() + 2);
+      
+      var newDate = new Date();
+
+      console.log(typeof newDate);
+
+      var visits = Math.round(Math.random() * 40) + 500;
+      var stockLeng = chart.dataProvider.length;
+      if (stockLeng >= 13) {
+        chart.dataProvider.splice(0, 1);
+      }
+        var _getMonth = newDate.getMonth()+1;
+        var _getDate = newDate.getDate();
+        var _getHours = newDate.getHours();
+        var _getMinutes = newDate.getMinutes();
+        var _getSenconds = newDate.getSeconds();
+
+        var recordTime = (_getMonth >= 10 ? _getMonth : '0' + _getMonth)
+                        + '-' + (_getDate >= 10 ? _getDate : '0' + _getDate)
+                        + ' ' + (_getHours >= 10 ? _getHours : '0' + _getHours)
+                        + ':' + (_getMinutes >= 10 ? _getMinutes : '0' + _getMinutes)
+                        + ':' + (_getSenconds > 10 ? _getSenconds : '0' + _getSenconds)
+
+      chart.dataProvider.push({
+        date: "",
+        value: visits
+      });
+      chart.validateData();
+
+
+      // if mouse is down, stop all updates
+      if (chart1.mouseDown)
+        return;
+      var leng = chart1.dataProvider.length;
+      console.log(chart1.dataProvider)
+      if (leng >= 13) {
+        chart1.dataProvider.splice(0, 1);
+      }
+
+      var _color;
+      if(visits >= 50){
+        _color = "#FF0F00"
+      } 
+      else if(visits < 50 && visits>=30){
+        _color = "#00A652"
+      }
+      else if(visits<30 && visits>=0){
+        _color = "#F6931E"
+      }
+
+      chart1.dataProvider.push({
+        "date": recordTime,
+        "value": 1,
+        "color": _color
+      });
+
+      chart1.validateData();
+    }, 2000);
+  </script>
+</body>
+
+</html>

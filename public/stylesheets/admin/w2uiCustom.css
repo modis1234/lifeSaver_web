@@ -1,0 +1,140 @@
+/* w2ui-calendar */
+.w2ui-reset.w2ui-calendar * {
+    color: #2e2e2e;
+}
+/* w2uiSide */
+.w2ui-node:hover {
+    cursor: pointer;
+}
+/* w2uiForm */
+.w2ui-panel-content div {
+    font-size: 12px;
+}
+.date-setting .w2ui-btn {
+    min-width: 50px !important;
+    height: 25px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+.date-setting .w2ui-btn:hover {
+    cursor: pointer;
+}
+.w2ui-btn:hover{
+    cursor: pointer;
+}
+
+td.w2ui-grid-data {
+    font-size: 13px !important;
+}
+.contents_form{
+    border-radius: 6px !important;
+}
+.contents_grid{
+    border-radius: 6px !important;
+}
+.contents_form .w2ui-input {
+    font-size: 13px !important;
+    /* width: 212px; */
+    padding-left: 10px !important;
+}
+.contents_form .w2ui-page.page-0 {
+    padding-top: 15px;
+}
+.contents_form .w2ui-page.page-0 div .w2ui-field:nth-child(1) {
+    display: none;
+}
+
+.contents_form .w2ui-field {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.w2ui-panel-content div {
+    font-size: 12px;
+}
+.bottom-left-box .w2ui-field>label {
+    width: 70px;
+}
+.bottom-left-box .w2ui-field>div {
+    margin-left: 80px;
+    color: #000000;
+}
+
+.contents_form .w2ui-field:nth-child(3).date-field {
+    margin-top: 10px !important;
+}
+.contents_form .w2ui-field {
+    margin-top: 15px !important;
+}
+.w2ui-form .w2ui-buttons .w2ui-btn:hover {
+    cursor: pointer;
+}
+div#w2ui-overlay * {
+    color: #000000;
+}
+button#download-btn {
+    min-width: 40px;
+}
+.w2ui-page.page-0 {
+    margin-top: 20px;
+}
+.w2ui-field.w2ui-span6>label {
+    width: 105px !important;
+}
+.w2ui-field.w2ui-span6>div {
+    margin-left: 120px !important;
+}
+
+
+/* w2uiGrid */
+.contents_grid * {
+    color: #2e2e2e;
+}
+.contents_new_grid * {
+    color: #2e2e2e;
+}
+.w2ui-col-group,.w2ui-col-header {
+    font-size: 14px;
+}
+.w2ui-grid-data[align='left'] {
+    padding-left: 22px !important;
+}
+.w2ui-grid-data[align='right'] {
+    padding-right: 10px !important;
+}.w2ui-col-header {
+    text-align: center;
+}
+td.w2ui-head.w2ui-col-select {
+    height: 27px;
+}
+input#fromDate, input#toDate {
+    width: 42%;
+}
+
+/* w2uiPopup */
+div#w2ui-popup * {
+    color: #2e2e2e;
+    font-size: 15px !important;
+}
+.w2ui-popup-btn:hover{
+    cursor: pointer;
+}
+
+/* w2uiOverlay */
+.w2ui-overlay * {
+    color: #2e2e2e;
+}
+
+/* w2uinewGrid */
+
+.bottom-right-box .w2ui-column.col-0 {
+    width: 80%;
+    margin-left: 120px;
+}
+/* .bottom-right-box input.w2ui-input {
+    width: 360px;
+} */
+.bottom-right-box input.w2ui-select.w2field {
+    width: 180px !important;
+}

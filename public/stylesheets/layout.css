@@ -1,0 +1,28 @@
+/* CSS Document */
+
+body{
+	background: #2e2e2e;
+	-ms-overflow-style:none;
+}
+
+/*
+div{
+	border: 1px solid;
+	box-sizing: border-box;
+	border-color: #fff;
+}
+*/
+.container{
+	width: 1920px;
+	height: 920px;
+	display: block;
+	margin-top: 0.57%;
+	position: relative;
+}
+
+
+
+
+
+
+

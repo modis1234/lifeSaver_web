@@ -1,0 +1,24 @@
+/* w2ui popup */
+.w2ui-col-header {
+    text-align: center;
+}
+div#w2ui-popup * {
+    color: #2e2e2e;
+    font-size: 15px;
+}
+.w2ui-grid-data:hover {
+    cursor: pointer !important;
+}
+.w2ui-centered.w2ui-confirm-msg {
+    font-size: 16px !important;
+}
+div#w2ui-message0 {
+    border-radius: 12px;
+}
+span.popop-title {
+    font-size: 17px !important;
+    font-weight: bold;
+}
+button.w2ui-popup-btn:hover {
+    cursor: pointer;
+}

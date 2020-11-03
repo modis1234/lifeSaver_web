@@ -1,0 +1,102 @@
+/* CSS Document */
+
+body{
+	background: #2e2e2e;
+	-ms-overflow-style:none;
+}
+
+/*
+div{
+	border: 1px solid;
+	box-sizing: border-box;
+	border-color: #fff;
+}
+*/
+.container{
+	width: 1920px;
+	height: 920px;
+	display: block;
+	margin-top: 0.57%;
+	position: relative;
+}
+.Left{
+	width: 474px;
+	height: 912px;
+	display: inline-block;
+	float: left;
+	margin: 0 0 0 10px;
+}
+.Gauge{
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 58px 0 0 25px;
+}
+.Chart{
+	height: 526px;
+	display: inline-block;
+/*
+	border: 1px solid;
+	box-sizing: border-box;
+*/
+	margin: 21px 0 0 25px;
+
+}
+.Bottom{
+	display: inline-block;
+	float: right;
+	padding: 10px 20px;
+}
+
+.topBox{
+	border: 2px solid #4A4A4A;
+	width: 474px;
+	height: 279px;
+	box-sizing: border-box;
+/*	margin: 10px;*/
+}
+
+.stateBox{
+	border: 2px solid #202020;
+	box-sizing: border-box;
+	background: #202020;
+	text-align: center;
+	margin:10px 0 0 4px;
+	width: 90px;
+	height: 350px;
+	display: inline-block;
+
+	margin:8px 0 0 4px;
+
+}
+.camBox{
+	width: 474px;
+	height: 271px;
+	background: #202020;	
+	margin-top: 10px;
+}
+.severityBox{
+	width: 380px;
+	height: 350px;
+	border: 2px solid #4A4A4A;
+	box-sizing: border-box;
+	/* margin-top: 10px; */
+	display: inline-block;
+	float: left;
+
+	margin-top: 8px;
+}
+
+.chartBox{
+	background: #C5C9CF;
+	display: inline-block;
+	width: 1283px;
+	height: 526px;
+	
+}
+
+
+
+
+
+
+

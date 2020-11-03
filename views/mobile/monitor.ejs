@@ -1,0 +1,88 @@
+<div class="component-box">
+    <div class="header">
+        <div class="top-header">
+            <div class="title-box"><span id="title">가스 모니터링 시스템</span></div>
+            <div class="logout-box" id="logout-btn">
+                <div class="menu-icon"><span><i class="fas fa-sign-out-alt"></i></span></div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <!-- Swiper -->
+            <div class="swiper-container" id="swiper-container"></div>
+        </div>
+
+
+    </div>
+    <div class="hidden-div"></div>
+    <div class="contents">
+        <div class="contents-box">
+            <ul class="gas-contents-box">
+                <li class="gas-list voc-sensor">
+                    <div class="gauge">
+                        <div class="svg-box" id="svg-box-voc"></div>
+                    </div>
+                    <div class="textbox">
+                        <div class="name">휘발성유기화합물<span class="code">VOC</span></div>
+                        <div class="value">
+                            <span class="number">--</span> PPM<br>
+                            <span class="unit">0~10</span>
+                        </div>
+                    </div>
+                    <div class="badge"></div>
+                </li>
+                <li class="gas-list comb-sensor">
+                    <div class="gauge">
+                        <div class="svg-box" id="svg-box-comb"></div>
+                    </div>
+                    <div class="textbox">
+                        <div class="name">가연성가스<span class="code">COMB</span></div>
+                        <div class="value">
+                            <span class="number">--</span>%LEL<br>
+                            <span class="unit">0~10</span>
+                        </div>
+                    </div>
+                    <div class="badge"></div>
+                </li>
+                <li class="gas-list o2-sensor">
+                    <div class="gauge">
+                        <div class="svg-box" id="svg-box-o2"></div>
+                    </div>
+                    <div class="textbox">
+                        <div class="name">산소<span class="code">O2</span></div>
+                        <div class="value">
+                            <span class="number">--</span>%VOL<br>
+                            <span class="unit">18~23.5</span>
+                        </div>
+                    </div>
+                    <div class="badge"></div>
+                </li>
+                <li class="gas-list h2s-sensor">
+                    <div class="gauge">
+                        <div class="svg-box" id="svg-box-h2s"></div>
+                    </div>
+                    <div class="textbox">
+                        <div class="name">황화수소<span class="code">H2S</span></div>
+                        <div class="value">
+                            <span class="number">--</span>PPM<br>
+                            <span class="unit">0~10</span>
+                        </div>
+                    </div>
+                    <div class="badge"></div>
+                </li>
+                <li class="gas-list co-sensor">
+                    <div class="gauge">
+                        <div class="svg-box" id="svg-box-co"></div>
+                    </div>
+                    <div class="textbox">
+                        <div class="name">일산화탄소<span class="code">CO</span></div>
+                        <div class="value">
+                            <span class="number">--</span>PPM<br>
+                            <span class="unit">51~500</span>
+                        </div>
+                    </div>
+                    <div class="badge"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

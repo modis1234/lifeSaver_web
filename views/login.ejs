@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.75, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>가스모니터링 시스템</title>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheets/login.css">
+    <link rel="shortcut icon" href="./images/login/amons_fav.ico">
+
+
+    <script src='./plugins/jQuery/jquery.min.js'></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="component">
+        <div class="contents-box">
+            <div class="top">
+                <div class="logo">
+                    <img src="./img/lsv1_logo.png" alt="LOGO" srcset="">
+                </div>
+            </div>
+            <div class="center">
+                <div id="div_title">가스모니터링 시스템</div>
+                <form id="login-form" action="/login" method="post">
+                    <div class="input-box">
+                        <input class="input_n" placeholder="아이디" id="txtID" name="userId">
+                        <input class="input_n" placeholder="패쓰워드" type="password" id="txtPass" name="password">
+                    </div>
+
+                    <div class="submit-box">
+                        <input type="submit" id="submit-btn" value="로그인">
+                    </div>
+                </form>
+            </div>
+            <div class="bootom">
+                <p>ⓒ OPENWORKS Co., Ltd. All Rights Reserved.</p>
+            </div>
+            <div class="loginFailPop">
+                <div class="hearder_box">
+                    <span>로그인 실패</span>
+                </div>
+                <div class="body_box">
+                    <div class="body_top">
+                        <span id="msgText">비밀번호가 일치하지 않습니다.</span>
+                    </div>
+                    <div class="body_bottom">
+                        <button id="login_check">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+ 
+    <div class="login-overlay"></div>
+
+
+    <script>
+        $(function () {
+            var errMsg = JSON.parse('<%- JSON.stringify(msg) %>');
+            if (errMsg) {
+                $('.login-overlay').css("display","block");
+                $(".loginFailPop").css("display","block");
+                $('#msgText').text(errMsg);
+                $('#txtPass').focus();
+
+            }
+
+            // if(_id){
+            //     $('#txtID').val(_id);
+            // } else {
+            //     $('#txtID').val("");
+            // }
+
+            $('#login_check').click(function () {
+                $(".login-overlay").css("display", "none");
+                $(".loginFailPop").css("display", "none");
+
+                location.replace('/');
+            });
+
+        });
+    </script>
+</body>
+
+</html>

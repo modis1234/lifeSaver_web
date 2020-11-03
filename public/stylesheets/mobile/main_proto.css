@@ -1,0 +1,106 @@
+/* CSS Document */
+/*
+div{
+	border: 1px solid #FF0004;
+	box-sizing: border-box;
+}
+*/
+
+.titleBar .box{
+	display: inline-block;
+/*	height: 57px;*/
+/*	vertical-align: middle;*/
+
+}
+.titleBar i{
+	font-size: 20px;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: 500;
+	width: 76%;
+	padding: 0 0 0 10%;
+}
+
+.frameLayout li{
+	width: 100%;
+	box-sizing: border-box;
+	background: #2e2e2e;
+	padding: 12px 16px 11px 16px;
+	border-bottom: 1px solid #484a47;
+/*	height: 16.8vh;*/
+}
+
+.frameLayout li:last-child {
+	border-bottom: none;
+}
+
+
+.sensor .box{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pro img{
+	width: 39px;
+}
+.pro.box{
+	width: 15%;
+}
+.textbox.box{
+	width: 64%;
+}
+.textbox{
+	display: inline-block;
+}
+.textbox .name{
+	font-size: 18px;
+/*	font-weight: 500;*/
+}
+.textbox .name span{
+	color: #8F8F8F;
+	white-space: pre;
+}
+.textbox .value span{
+	font-size: 28px;
+	font-weight: 500;
+	color: #00A651;
+	line-height: 1;
+}
+.textbox .value span.unit{
+	font-size: 12px;
+}
+.textbox .value{
+	font-size: 12px;
+	color: #DDDCDC;
+}
+.textbox .severity{
+	font-size: 12px;
+	white-space: pre;
+	color: #00A651;
+}
+.badge{
+	width: 60px;
+	height: 69px;
+}
+
+.bottomNav .btn{
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	color: #838582;
+	width: 32%;
+	padding: 10px 0 0 0;
+}
+.bottomNav .btn i{
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+

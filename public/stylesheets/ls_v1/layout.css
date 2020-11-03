@@ -1,0 +1,80 @@
+/* CSS Document */
+.container {
+    width: 1920px;
+    height: 920px;
+    display: block;
+    margin-top: 0.84%;
+    position: relative;
+}
+.Left{
+	width: 380px;
+	height: 912px;
+	display: inline-block;
+	float: left;
+	margin: 0px 0 0 15px;
+}
+.right {
+    height: 100%;
+    /* width: 100%; */
+    float: right;
+}
+.Gauge {
+    box-sizing: border-box;
+    margin: 30px 0 0 5px;
+    height: 327px;
+}
+.Chart {
+    height: 526px;
+    margin-left: 25px;
+}
+.Bottom{
+	display: inline-block;
+	width: 1486px;
+/*	height: 36px;*/
+	margin-left: 25px;
+	padding: 14px 0 0 0;
+}
+
+.topBox {
+    border: 2px solid #4A4A4A;
+    width: 380px;
+    height: 430px;
+    box-sizing: border-box;
+    /* margin: 10px; */
+}
+
+.stateBox{
+	border: 2px solid #4A4A4A;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    width: 380px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.severityBox{
+	width: 380px;
+	height: 350px;
+	border: 2px solid #4A4A4A;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+.chartBox{
+	background: #C5C9CF;
+	display: inline-block;
+	width: 1377px;
+	height: 526px;
+}
+
+
+
+
+
+
+

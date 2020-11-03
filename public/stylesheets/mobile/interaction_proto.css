@@ -1,0 +1,33 @@
+/**/
+
+/*뱃지 - 정상(default) 경고 위험*/
+
+/*.nomal .warning .danger*/
+
+.badge.nomal {
+	background: url("../../img/mobile/badge_nomal.png") no-repeat;
+}
+
+
+
+.badge.warning{
+	background: url("../../img/mobile/badge_war.png") no-repeat;
+}
+.value.warning span{
+	color: #F6921E;
+}
+
+
+.badge.danger{
+	background: url("../../img/mobile/badge_dan.png") no-repeat;
+}
+.value.danger span{
+	color: #ED1C24;
+}
+
+
+/*bottomNav*/
+
+.monitoring.btn.select{
+	color: #036EB8;
+}

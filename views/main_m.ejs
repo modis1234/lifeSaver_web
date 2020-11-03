@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>가스 모니터링 시스템</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" data-main="../init_mobile" src="/plugins/require/require.min.js"></script>
+  <!-- <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/layout.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/fontawesome5/css/all.min.css" rel="stylesheet">
+  <link href="css/interaction.css" type="text/css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <div class="container">
+    <a href="market://details?id=com.mm.android.direct.gdmssphone" target="blank">test</a>
+    <div class="wrapper-body Wrapper">
+      <div class="titleBar">
+        <div class="menuBtn box"><i class="fas fa-bars"></i></div>
+        <div class="title box">가스 모니터링 시스템</div>
+        <div class="logoutBtn box"><i class="fas fa-sign-out-alt"></i></div>
+      </div>
+      <div class="frameLayout">
+        <ul>
+          <li class="voc sensor">
+            <div class="pro box"><img src="./img/mobile/gauge_default.png" alt="게이지"></div>
+            <!--					<div class="point"><i class="fas fa-caret-left"></i></div>-->
+            <div class="textbox box">
+              <div class="name">휘발성 유기화합물<span> VOC</span></div>
+              <div class="value"><span class="value_text">00</span> PPM<br>
+                <span class="unit">0.0~0.08</span></div>
+            </div>
+            <div class="badge box nomal"></div>
+          </li>
+          <li class="ex sensor">
+            <div class="pro box"><img src="./img/mobile/gauge_default.png" alt="게이지"></div>
+            <div class="textbox box">
+              <div class="name">가연성가스<span> Ex</span></div>
+              <div class="value nomal"><span class="value_text">00</span> %LEL<br>
+                <span class="unit">0~10</span></div>
+            </div>
+            <div class="badge box warning"></div>
+          </li>
+          <li class="o2 sensor">
+            <div class="pro box"><img src="./img/mobile/gauge_default_o2.png" alt="게이지"></div>
+            <div class="textbox box">
+              <div class="name">산소<span> O2</span></div>
+              <div class="value nomal"><span class="value_text">00</span> %VOL<br>
+                <span class="unit">18~23.5</span></div>
+            </div>
+            <div class="badge box nomal"></div>
+          </li>
+          <li class="h2s sensor">
+            <div class="pro box"><img src="./img/mobile/gauge_default.png" alt="게이지"></div>
+            <div class="textbox box">
+              <div class="name">황화수소<span> H2S</span></div>
+              <div class="value"><span class="value_text">00</span> PPM<br>
+                <span class="unit">0~10</span></div>
+            </div>
+            <div class="badge box nomal"></div>
+          </li>
+          <li class="co sensor">
+            <div class="pro box"><img src="./img/mobile/gauge_default.png" alt="게이지"></div>
+            <div class="textbox box">
+              <div class="name">일산화탄소<span> CO</span></div>
+              <div class="value"><span class="value_text">00</span> PPM<br>
+                <span class="unit">0~30</span></div>
+            </div>
+            <div class="badge box nomal"></div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="bottomNav">
+        <ul>
+          <li class="monitoring btn select"><i class="fas fa-tv"></i><br>대시보드</li>
+          <li class="duration btn"><i class="fas fa-clock"></i><br>사용시간</li>
+          <li class="timeline btn"><i class="fas fa-history"></i><br>알람이력</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

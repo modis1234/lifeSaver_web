@@ -1,0 +1,69 @@
+<div class="w2ui-page page-0 w2ui-gasInfo-form">
+    <div class="w2ui-form-top-area">
+        <div class="w2ui-group-title">가스타입 정보</div>
+        <div class="w2ui-group">
+            <div class="w2ui-field w2ui-span4">
+                <label></label>
+                <div>
+                    <input name="el_name">
+                </div>
+            </div>
+            <div class="w2ui-field w2ui-span4">
+                <label>가스명</label>
+                <div>
+                    <input name="name" readonly>
+                </div>
+            </div>
+            <div class="w2ui-field w2ui-span4">
+                <label>화학식</label>
+                <div>
+                    <input name="code" readonly>
+                </div>
+            </div>    
+            <div class="w2ui-field w2ui-span4">
+                <label>단위</label>
+                <div>
+                    <input name="unit" readonly>
+                </div>
+            </div>   
+            <div class="w2ui-field w2ui-span4">
+                <label>검지범위</label>
+                <div>
+                    <input name="measure_range" readonly>
+                </div>
+            </div>     
+            <div class="w2ui-field w2ui-span4">
+                <label>알람값 1</label>
+                <div>
+                    <input type="number" name="alarm_1">
+                </div>
+            </div>   
+            <div class="w2ui-field w2ui-span4">
+                <label>알람값 2</label>
+                <div>
+                    <input type="number" name="alarm_2">
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="w2ui-form-bottom-center-area w2ui-form-bottom default-form">
+        <div class="range-image"></div>
+        <div class="alarm-value-box">
+            <div class="alarm_text_box alarm1_box">
+                <input type="text" id="value_1" readonly><br>
+                <span class="title">알람값1</span>
+            </div>
+            <div class="alarm_text_box alarm2_box"> 
+                <input type="text" id="value_2" readonly><br>
+                <span class="title">알람값2</span>
+            </div>
+        </div>
+        <div class="range-text-box">
+            <div class="range-text range_minimum">0</div>
+            <div class="range-text range_maximum">100</div>
+        </div>
+    </div>
+    <div class="w2ui-buttons">
+        <button class="w2ui-btn" name="reset" id="reset-btn">초기화</button>
+        <button class="w2ui-btn w2ui-btn-blue" name="save" id="search-btn" disabled>저장</button>
+    </div>

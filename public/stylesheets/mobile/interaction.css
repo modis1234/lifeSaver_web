@@ -1,0 +1,61 @@
+/* interaction */
+
+.gas-contents-box .badge{
+    background: url("../../img/mobile/badge_ready.png") no-repeat;
+}
+
+.gas-contents-box.success .badge.normal {
+    background: url("../../img/mobile/badge_normal.png") no-repeat;
+}
+
+.gas-contents-box.success .badge.warning {
+    background: url("../../img/mobile/badge_war.png") no-repeat;
+}
+.textbox.success .value.warning span{
+	color: #F6921E;
+}
+
+.gas-contents-box.success .badge.danger {
+    background: url("../../img/mobile/badge_dan.png") no-repeat;
+}
+.textbox.success .value.danger span{
+	color: #ED1C24;
+}
+@media screen and (min-width: 560px) {
+    .top-header>div span {
+        font-size: 30px;
+    }
+    .top-header>.title-box>#title, .top-header>.logout-box>.menu-icon {
+        top: 10px;
+    }
+}
+
+@media screen and (min-height: 729px) {
+    li.gas-list:nth-child(n+2) {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-height: 528px) and (min-height: 599px) {
+    .contents {
+        height: 530px;
+    }
+    .contents-box {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    li.gas-list:nth-child(n+2) {
+        margin-top: 4px !important;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .contents {
+        height: 590px;
+    }
+    .contents-box {
+        top: 5px;
+    }
+}

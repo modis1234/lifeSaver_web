@@ -1,0 +1,283 @@
+/* CSS Document */
+
+.toplogo{
+	background-image: url("../../img/lsv1_logo.png");
+	width: 171px;
+	height: 66px;
+	margin: auto;
+	margin-top: 47px;
+}
+.tit {
+    display: block;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.tit span {
+    font-size: 32px;
+    font-weight: 500;
+    color: #4C4C4C;
+}
+.topbtn {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.topbtn span{
+	color: #C5C9CF;
+	font-size: 14px;
+}
+.logout{
+	display: inline-block;
+	padding: 6px;
+}
+.adm{
+	display: inline-block;
+	padding: 6px;
+}
+.sensor-list{
+	display: inline-block;
+	padding: 6px;
+}
+.volume-up,.volume-mute{
+	display: none;
+	padding: 6px;
+}
+.volume-up > i,
+.volume-mute > i{
+	margin-left: 7px;
+	background-color: #ff0000 !important;
+}
+.topbtn i{
+	background: #036eb8;
+	border-radius: 50%;
+	padding: 15px;
+	font-size: 20px;
+	display: block;
+	
+}
+.topbtn i:hover{
+	color: #2e2e2e;
+	cursor: pointer;
+}
+.line{
+	width: 364px;
+	height: 1px;
+	border-top: 1px solid #4C4C4C;
+	margin: auto;
+}
+.time{
+	display: block;
+	text-align: center;
+	margin-top: 22px;
+}
+.count i{
+	font-size: 20px;
+	color: #4C4C4C; 
+	margin-right: 10px;
+	vertical-align: middle;
+	
+}
+.count span{
+	font-size: 26px;
+	font-weight: 400;
+	color: #4c4c4c;
+}
+
+span.ready{
+	font-size: 16px;
+	display: block;
+	text-align: center;
+}
+span.action {
+    font-size: 16px;
+    display: block;
+	text-align: center;
+	display: none;
+}
+.stateBox i{
+	font-size: 26px;
+	display: block;
+	color: #4C4C4C;
+	text-align: center;
+}
+.area{
+	display: inline-block;
+	padding: 0 15px;
+}
+.area span{
+	color: #4C4C4C;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+}
+.severityBox{
+	/* background: url("../../img/left_range_0.png") no-repeat; */
+}
+
+
+.sensor{
+	width: 291px;
+	height: 291px;
+	background:url("../../img/gauge_default.png") no-repeat;
+	display: inline-block;
+	margin: 5px;
+}
+
+
+.Gauge .name{
+	font-size: 29px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 35px;
+}
+.name {
+	position:relative;
+	top: 32px;
+}
+.ename {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: right;
+    position: relative;
+    top: 65px;
+    right: 8px;
+}
+.comb.sensor .ename {
+    font-size: 23px;
+    height: 42px;
+    top: 66px;
+    right: 1px;
+}
+.Gauge .value{
+	font-size: 53px;
+	font-weight: 700;
+	color: #16D63A;
+	text-align: center;
+}
+.value{
+	position: relative;
+	top: 24px;
+}
+.unit{
+	position: relative;
+	top: 16px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.btn{
+	display: inline-block;
+	float: left;
+}
+.btn li{
+	background: #4A4A4A;
+	color: #8F8F8F;
+	font-size: 18px;
+	margin-bottom: 4px;
+	margin-right: 6px;
+	text-align: center;
+	line-height: 20px;
+	padding: 31px 10px;
+	cursor: pointer;
+
+}
+.btn li:last-child{
+	margin-bottom: 0;
+}
+.btn li:first-child{
+	padding: 21px 0px;
+}
+.btn li > span{
+	font-size: 14px;
+	display: block;
+	top: 4px;
+	position: relative;
+}
+.Bottom img{
+	float:right; 
+}
+.chartDiv{
+	width: 100%;
+	height: 50%;
+}
+.chartDiv a, .column-chartDiv a{
+	display: none !important;
+}
+.chartBox ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+li.chart-contents-box {
+    width: 100%;
+    height: 100%;
+}
+
+
+.rollingAt-box {
+	position: absolute;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background-color: #2e2e2e;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    top: 386px;
+    left: 1827px;
+    font-size: 19px;
+}
+span#rolling-stop-btn,
+span#rolling-start-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+	text-align: center;
+
+}
+span#rolling-stop-btn:hover,
+span#rolling-start-btn:hover {
+	background-color: #036eb8;
+}
+
+span#rolling-stop-btn span:hover,
+span#rolling-start-btn span:hover {
+	color: #929292;
+} 
+
+.rollingAt-box span#rolling-start-btn {
+		display: none;
+}
+.rollingAt-box span#rolling-start-btn:hover {
+	cursor: pointer;
+}
+.rollingAt-box:hover {
+	cursor: pointer;
+}
+
+.gaugeDiv {
+    transform: scaleY(-1);
+    position: relative;
+    width: 287px;
+    height: 175px;
+    left: 3px;
+	top: -80px ;
+}
+
+.gaugeDiv#gauge-COMB {
+	top: -83px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
