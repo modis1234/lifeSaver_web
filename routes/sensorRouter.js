@@ -44,7 +44,7 @@ router.get('/sensors/:sensorIndex', (req, res, next) => {
                         results[i]['record_time'] = results[i]['record_time'] ? moment(results[i]['record_time']).format() : null;
 
                     }
-                    res.json(results);
+                    res.json(results).end();
                 }
             });
             

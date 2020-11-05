@@ -11,7 +11,7 @@ moment.tz.setDefault("Asia/Seoul");
 
 var sensorState = {
     serverAddress:"http://119.207.78.146:9090", // 운영 로그인 서버
-    //serverAddress:"http://192.168.0.39:9090", //개발 로그인 서버
+    // serverAddress:"http://192.168.0.39:9090", //개발 로그인 서버
     receiveSensor: {},
     receiveLog: {},
     gasInfoList: {},

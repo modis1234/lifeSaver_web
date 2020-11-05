@@ -25,9 +25,11 @@ router.get('/cctvs/:sensorIndex', (req, res, next) => {
                     res.status(404).end();
                     throw err;
                 } else {
-                    res.json(results);
+                    res.json(results).end();
                 }
             })
+            connection.release();
+
         }
     });
 });

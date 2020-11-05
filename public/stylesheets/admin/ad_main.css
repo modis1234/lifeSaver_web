@@ -397,13 +397,13 @@ div#cctvInfo_form {
     width: 80%;
 }
 /* CCTVFORM */
-.w2ui-buttons.w2ui-sensor-buttons {
+.w2ui-buttons.w2ui-cctvInfo-buttons {
     display: flex;
     justify-content: center;
 }
-.page-0.w2ui-sensor-form {
+.page-0.w2ui-cctvInfo-form {
     margin-top: 0px !important;
 }
-.w2ui-sensor-form .w2ui-field input {
+.w2ui-cctvInfo-form .w2ui-field input {
     width: 180px !important;
 }
