@@ -6,7 +6,7 @@ const _query = {
     },
     insert(data) {
         let _data = data;
-        let _createdDate = _data.createdDate ? `"${_data.createdDate}"`: null;
+        let _createdDate = _data.created_date ? `"${_data.created_date}"`: null;
         let _fanAddress = _data.fan_address ? `"${_data.fan_address}"` : null;
         let _port = _data.port ? `"${_data.port}"` : null;
         let _userId = _data.user_id ? `"${_data.user_id}"`:null;
@@ -34,6 +34,19 @@ const _query = {
                      user_id=${_userId}, 
                      password=${_password}
                      WHERE id=${_id}`;
+        return query;
+    },
+    requestUpdate(data) {
+        let _data = data;
+        let _modifiedDate = _data.modifiedDate? `"${_data.modifiedDate}"` : null;
+        let _sensorIndex = _data.sensor_index? `"${_data.sensor_index}"` : null;
+        let _fanAddress = _data.fan_address ? `"${_data.fan_address}"` : null;
+        let _port = _data.port ? `"${_data.port}"` : null;
+        let query = `UPDATE info_cctv SET 
+                     modified_date=${_modifiedDate}, 
+                     fan_address=${_fanAddress}, 
+                     port=${_port}
+                     WHERE sensor_index=${_sensorIndex};`;
         return query;
     },
     delete(id) {

@@ -10,6 +10,7 @@ moment.tz.setDefault("Asia/Seoul");
 
 const queryconfig = require('./query/sensor_query');
 const gasQueryconfig = require('./query/gas_query');
+const cctvQueryconfig = require('./query/cctv_query');
 const pool = require('./config/connection');
 
 var receive = require('./config/getData');
@@ -83,6 +84,8 @@ router.post('/sensors', (req, res, next) => {
                     data['sensor_index'] = _sensorIndex;
                  
                     receive.initGasInsert(data)
+                    receive.initCCTVInsert(reqBody)
+                    
                 }
             });
             connection.release();
@@ -97,11 +100,16 @@ router.put('/sensors/:id', (req, res, next) => {
     reqBody['id'] = _id;
     let date = moment().format('YYYY-MM-DD HH:mm:ss.SSS');
     reqBody['modifiedDate'] = date;
-    
-    console.log('--.',reqBody);
-    
-    let _query = queryconfig.requestUpdate(reqBody)+gasQueryconfig.requestUpdate(reqBody);
-    console.log(_query)
+        
+    var _query='';
+    if(reqBody['version'] === 1){
+        _query = queryconfig.requestUpdate(reqBody)+gasQueryconfig.requestUpdate(reqBody);
+        
+    } else {
+        _query = queryconfig.requestUpdate(reqBody)+gasQueryconfig.requestUpdate(reqBody)+cctvQueryconfig.requestUpdate(reqBody);
+        
+    }
+
     pool.getConnection((err, connection) => {
         if (err) {
             res.status(400).end();

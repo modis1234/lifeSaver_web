@@ -88,7 +88,7 @@ const _query = {
 
         let query = `UPDATE info_gas SET 
                      sensor_index=${_sensorIndex}
-                     WHERE sensor_id=${_id}`;
+                     WHERE sensor_id=${_id};`;
         console.log(query)
         return query;
     },

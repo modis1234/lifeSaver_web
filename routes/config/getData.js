@@ -1,5 +1,6 @@
 const queryconfig = require('../query/sensor_query');
 const gasQueryconfig = require('../query/gas_query');
+const cctvQueryconfig = require('../query/cctv_query');
 
 const pool = require('./connection');
 const request = require('request');
@@ -164,6 +165,36 @@ var sensorState = {
                         throw err;
                     } else {
                         console.log('Init GAS insert success!!!!');
+                    }
+                })
+                connection.release();
+            }
+        });
+        
+    },
+    initCCTVInsert (data){
+        let _this =this;
+        console.log(data)
+        let initData = {};
+        initData['created_date'] = data['createdDate']
+        initData['fan_address'] = data['fan_address']
+        initData['port'] = data['port']
+        initData['user_id'] = 'user'
+        initData['password'] = 'a5284400@'
+        initData['sensor_index'] = data['sensor_index']
+
+
+        let _query = cctvQueryconfig.insert(initData);
+        console.log(_query)
+        pool.getConnection((err, connection) => {
+            if (err) {
+                throw "There is no connection to the mysql server..." + err.message;
+            } else {
+                connection.query(_query, (err, results) => {
+                    if (err) {
+                        throw err;
+                    } else {
+                        console.log('Init CCTV insert success!!!!');
                     }
                 })
                 connection.release();

@@ -10,7 +10,6 @@ const _query = {
     },
     insert(data) {
         let _data = data;
-        console.log(data)
         let _id = _data.id;
         let _createdDate = _data.createdDate ? `"${_data.createdDate}"` : null;
         let _deviceIndex = _data.device_index ? `"${_data.device_index}"` : null;
