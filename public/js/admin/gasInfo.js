@@ -363,7 +363,8 @@ define([
 
                    var gridName = _this.config.grid['name'];
                    window.w2ui[gridName].set(result['id'], result);
-                 
+                   window.w2ui[gridName].select(result['id']);
+
                    $('.w2ui-btn-blue').prop('disabled', true);
                    
                     window.main.getGasList(window.main.sensorIndex);

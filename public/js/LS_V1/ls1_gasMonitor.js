@@ -669,6 +669,8 @@ define([
 				if (fileName) {
 					_this.alarmPauseHandler();
 					clearTimeout(setTimeoutId);
+					_this.alarmObj['audioObj']=undefined
+
 				}
 			}
 		},

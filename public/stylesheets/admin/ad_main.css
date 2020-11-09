@@ -239,6 +239,7 @@ div#gasInfo_grid {
     position: absolute;
     height: 50px;
     top: 117px;
+    left: 249px;
 }
 .default-form .alarm-value-box {
     width: 34%;
@@ -294,6 +295,7 @@ input#value_1, input#value_2 {
     width: 85%;
     height: 18px;
     top: 100px;
+    left: 56.3px;
 }
 .range-text.range_minimum {
     width: 7%;
@@ -309,7 +311,8 @@ input#value_1, input#value_2 {
     height: 100%;
     color: #5e5e5e;
     opacity: 0.5;
-    text-align: end;
+    position: absolute;
+    left: 96%;
 }
 .w2ui-form-bottom .w2ui-group .label-box label{
     color: #666;

@@ -15,10 +15,10 @@ const _query = {
         let _deviceIndex = _data.device_index ? `"${_data.device_index}"` : null;
         let _sensorIndex = _data.sensor_index ? `"${_data.sensor_index}"` : null;
         let _name = _data.name ? `"${_data.name}"` : null;
-        let _warmingUpCount = _data.warmingUpCount ? `${_data.warmingUpCount}` : 120000;
+        let _warmingUpCount = _data.warmingUpCount ? `${_data.warmingUpCount}` : 900000;
         let _rollingCount = _data.rollingCount ? `${_data.rollingCount}` : 5000;
         let _version = _data.version ? `${_data.version}` : 0;
-        let _alarmPath = _data.alarmPath ? `"${_data.alarmPath}"` : null;
+        let _alarmPath = _data.alarmPath ? `"${_data.alarmPath}"` : "싸이렌_16bit_16KHz_-고화질용-1번반복.mp3";
         let _siteIndex = _data.site_index ? `"${_data.site_index}"` :null;
 
 
