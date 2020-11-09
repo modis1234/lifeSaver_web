@@ -178,7 +178,7 @@ router.put('/sensors/:sensorIndex/:id', (req, res, next) => {
 router.delete('/sensors/:sensorIndex', (req, res, next) => {
     // let _id = req.params.id;
     let _sensorIndex = req.params.sensorIndex
-    let _query = queryconfig.delete(_sensorIndex)+gasQueryconfig.delete(_sensorIndex);
+    let _query = queryconfig.delete(_sensorIndex)+gasQueryconfig.delete(_sensorIndex)+cctvQueryconfig.delete(_sensorIndex);
     console.log(_query)
     pool.getConnection((err, connection) => {
         if (err) {

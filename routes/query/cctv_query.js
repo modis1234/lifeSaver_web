@@ -49,9 +49,12 @@ const _query = {
                      WHERE sensor_index=${_sensorIndex};`;
         return query;
     },
-    delete(id) {
-        let query = `DELETE FROM info_cctv WHERE id=${id}`;
-        return query;
+    delete(data) {
+        var _sensorIndex = data;
+        var _query = `DELETE FROM info_cctv WHERE sensor_index = "${_sensorIndex}";`
+
+        return _query
+
     }
 }
 
