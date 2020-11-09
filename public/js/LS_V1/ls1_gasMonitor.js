@@ -1345,12 +1345,7 @@ define([
 			strMinute = strMinute >= 10 ? strMinute : '0' + strMinute;
 			strSeconds = strSeconds >= 10 ? strSeconds : '0' + strSeconds;
 
-			var strCount='';
-			if(strDay > 0){
-				strCount = strDay+'일 '+strHour + ':' + strMinute + ':' + strSeconds;
-			} else {
-				strCount = strHour + ':' + strMinute + ':' + strSeconds;
-			}
+			var strCount = strHour + ':' + strMinute + ':' + strSeconds;
 			_this.$el.find('#usedTime-text').text(strCount);
 			//console.log("우리나라가 독립한지:" + strDay + " 일 " + strHour + " 시간 " + strMinute + " 분"+strSecond+"초 되었습니다.");
 		},
