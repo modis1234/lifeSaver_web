@@ -15,7 +15,7 @@ var _mysql = {
     password: 'work1801',
     database: 'life_saver_gas',
     multipleStatements: true //다중 퀄리 사용가능
-  },
+  }
   // operation: {
   //   host: '119.207.78.146',
   //   port: '3306',

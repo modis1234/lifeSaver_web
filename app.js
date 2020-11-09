@@ -26,7 +26,7 @@ var fileUploadRouter = require('./routes/uploadRouter');
 var app = express();
 var dbconfig = require('./routes/config/database');
 
-var sessionStore = new MySQLStore(dbconfig.operation);
+var sessionStore = new MySQLStore(dbconfig.develop);
 var session = session({
   secret: "asdfasdfdas",
   resave: false,
