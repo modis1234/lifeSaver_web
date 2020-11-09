@@ -11,14 +11,11 @@ const { ftruncate } = require('fs');
 
 
 router.user = {};
-// const LOGIN_SERVER = 'http://119.207.78.146:9090';
-const LOGIN_SERVER = 'http://192.168.0.39:9090';
+ const LOGIN_SERVER = 'http://119.207.78.146:9090';
 
 router.get('/', function (req, res, next) {
   console.log('AGENT--->', req.headers['user-agent'])
   let _loginObj = req.cookies.login;
-  // console.log("cookie--->", req.cookies.id)
-
 
   /*
     _loginObj
