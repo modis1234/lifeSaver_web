@@ -6,6 +6,12 @@
 .w2ui-node:hover {
     cursor: pointer;
 }
+.w2ui-node-image {
+    padding: 5px !important;
+}
+.w2ui-node-caption {
+    margin-left: 25px !important;
+}
 /* w2uiForm */
 .w2ui-panel-content div {
     font-size: 12px;
