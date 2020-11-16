@@ -38,9 +38,9 @@ define([
                         nodes: [
                             // { id: 'account', text: '계정 관리', icon: 'fas fa-bell' },
                             { id: 'receiver', text: '알림수신자 등록', icon: 'fas fa-bell' },
-                            { id: 'sensorInfo', text: '대시보드 관리', icon: 'fas fa-bell' },
-                            { id: 'gasInfo', text: '가스타입 설정', icon: 'fas fa-bell' },
-                            { id: 'cctvInfo', text: 'CCTV 관리', icon: 'fas fa-bell' },
+                            { id: 'sensorInfo', text: '대시보드 관리', icon: 'fas fa-desktop' },
+                            { id: 'gasInfo', text: '가스타입 설정', icon: 'fas fa-tachometer-alt' },
+                            { id: 'cctvInfo', text: 'CCTV 관리', icon: 'fas fa-video' }
                             // { id: 'f', text: '경광등 관리', icon: 'fas fa-bell' }
                         ]
                     },
@@ -48,7 +48,7 @@ define([
                         id: 'lookUp', text: '조회', img: 'icon-folder', expanded: true, group: true, groupShowHide: false, collapsible: false,
                         nodes: [
                             { id: 'alarmList', text: '알람 이력 조회', icon: 'fas fa-file-alt' },
-                            { id: 'usedList', text: '장비 사용시간', icon: 'fas fa-file-alt' },
+                            { id: 'usedList', text: '장비 사용시간', icon: 'fas fa-file-alt' }
                             // { id: 'i', text: '문자 전송 이력 조회', icon: 'fas fa-file-alt' }
                         ]
                     },
